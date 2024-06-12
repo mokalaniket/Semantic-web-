@@ -1,0 +1,107 @@
+.container{
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.container .header{
+	width: 1170px;
+	height: 200px;
+	background-color: #090909;
+}
+.container .contentrow{
+	width: 1170px;
+	height: auto;
+}
+.container .contentrow .content1{
+	width: 292px;
+	height: 200px;
+	background-color: #15ec6b;
+	float: left;
+}
+.container .contentrow .content2{
+	width: 293px;
+	height: 200px;
+	background-color: #0568d1;
+	float: left;
+}
+.container .contentrow .content3{
+	width: 292px;
+	height: 200px;
+	background-color: #bb3808;
+	float: left;
+}
+.container .contentrow .content4{
+	width: 293px;
+	height: 200px;
+	background-color: #2822c6;
+	float: left;
+}
+.container .contentrow .content5{
+	width: 292px;
+	height: 200px;
+	background-color: #962b2b;
+	float: left;
+}
+
+.container .contentrow .content6{
+	width: 293px;
+	height: 200px;
+	background-color: #634ea0;
+	float: left;
+}
+
+.container .contentrow .content7{
+	width: 585px;
+	height: 200px;
+	background-color: #3796bc;
+	float: left;
+}
+
+.container .contentrow .content8{
+	width: 585px;
+	height: 200px;
+	background-color: #a4c61a;
+	float: left;
+}
+
+.container .contentrow .content9{
+	width: 292px;
+	height: 200px;
+	background-color: #cc56c6;
+	float: left;
+}
+
+.container .contentrow .content10{
+	width: 293px;
+	height: 200px;
+	background-color: #cf394a;
+	float: left;
+}
+.container .contentrow .content11{
+	width: 293px;
+	height: 200px;
+	background-color: #3e5c8e;
+	float: left;
+}
+
+.container .contentrow .content12{
+	width: 585px;
+	height: 200px;
+	background-color: #16d609;
+	float: left;
+}
+
+.container .contentrow .content13{
+	width: 292px;
+	height: 200px;
+	background-color: #cea2cb;
+	float: left;
+}
+
+.container .contentrow .content14{
+	width: 1170px;
+	height: 200px;
+	background-color: #c2710f;
+	float: left;
+}
