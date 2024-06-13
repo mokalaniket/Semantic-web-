@@ -1,0 +1,21 @@
+.container{
+	width: 1170px;
+	height: auto;
+	margin: 0 auto;
+}
+.navbar{}
+.navbar ul{
+	list-style-type: none;
+}
+.navbar ul li{
+}
+.navbar ul li a{
+	text-decoration: none;
+	float: left;
+	background-color: #ff0000;
+	padding: 10px 20px 10px 20px;
+}
+.navbar ul li a:hover{
+	background-color: #000;
+	color: #fff;
+}
