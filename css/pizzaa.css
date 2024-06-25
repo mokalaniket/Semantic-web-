@@ -1,0 +1,143 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #ffcc00;
+    padding: 20px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-info {
+    font-size: 14px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: #ffcc00;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+}
+
+.hero-content p,
+.offer {
+    font-size: 24px;
+}
+
+button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+.choose-enjoy {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.choose-enjoy h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.dishes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dish {
+    text-align: center;
+}
+
+.dish img {
+    max-width: 100%; /* adjust image width as necessary */
+    border-radius: 50%;
+}
+
+.events,
+.specials,
+.reservation,
+footer {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.specials {
+    display: flex;
+    justify-content: space-around;
+}
+
+.special img {
+    max-width: 100%; /* adjust image width as necessary */
+}
+.special p {
+    max-width: 50%; /* adjust image width as necessary */
+}
+
+.reservation form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reservation input,
+.reservation button {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background: #000;
+    color: #fff;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-media {
+    margin-top: 20px; /* corrected without non-breaking space */
+}
