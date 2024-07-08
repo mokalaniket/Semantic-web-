@@ -1,0 +1,149 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix : <http://visualdataweb.org/newOntology/> .
+
+# Ontology Declaration
+:NewOntology rdf:type owl:Ontology ;
+    dc:title "New ontology"@en ;
+    dc:description "New ontology description"@en .
+
+# Classes
+:ME rdf:type owl:Class ;
+    rdfs:label "ME" .
+
+:Branches rdf:type owl:Class ;
+    rdfs:label "Branches" .
+
+:COLLEGE rdf:type owl:Class ;
+    rdfs:label "COLLEGE" .
+
+:Admin_Cell rdf:type owl:Class ;
+    rdfs:label "Admin_Cell" ;
+    rdfs:comment "Admin Cell"@en .
+
+:CSE rdf:type owl:Class ;
+    rdfs:label "CSE" .
+
+:Examination_cell rdf:type owl:Class ;
+    rdfs:label "Examination_cell" ;
+    rdfs:comment "Examination cell"@en .
+
+:ECE rdf:type owl:Class ;
+    rdfs:label "ECE" .
+
+:IT rdf:type owl:Class ;
+    rdfs:label "IT" .
+
+:CE rdf:type owl:Class ;
+    rdfs:label "CE" .
+
+:Admission_Cell rdf:type owl:Class ;
+    rdfs:label "Admission_Cell" ;
+    rdfs:comment "Admission Cell"@en .
+
+:d rdf:type owl:Class ;
+   rdfs:label "d" ;
+   rdfs:comment "TnP Cell"@en .
+
+:PE rdf:type owl:Class ;
+    rdfs:label "PE" .
+
+# Object Properties
+: rdf:type owl:ObjectProperty ;
+  rdfs:domain :COLLEGE ;
+  rdfs:range :Admission_Cell .
+
+:department rdf:type owl:ObjectProperty ;
+  rdfs:label "department" ;
+  rdfs:domain :COLLEGE ;
+  rdfs:range :Branches .
+
+:b4 rdf:type owl:ObjectProperty ;
+  rdfs:label "b4" ;
+  rdfs:domain :Branches ;
+  rdfs:range :PE .
+
+:Departments rdf:type owl:ObjectProperty ;
+  rdfs:label "Departments" ;
+  rdfs:domain :COLLEGE ;
+  rdfs:range :d .
+
+:B3 rdf:type owl:ObjectProperty ;
+  rdfs:label "B3" ;
+  rdfs:domain :Branches ;
+  rdfs:range :IT .
+
+:B2 rdf:type owl:ObjectProperty ;
+  rdfs:label "B2" ;
+  rdfs:domain :Branches ;
+  rdfs:range :CE .
+
+:B1 rdf:type owl:ObjectProperty ;
+  rdfs:label "B1" ;
+  rdfs:domain :Branches ;
+  rdfs:range :ME .
+
+:B6 rdf:type owl:ObjectProperty ;
+  rdfs:label "B6" ;
+  rdfs:domain :Branches ;
+  rdfs:range :ECE .
+
+:B5 rdf:type owl:ObjectProperty ;
+  rdfs:label "B5" ;
+  rdfs:domain :Branches ;
+  rdfs:range :CSE .
+
+:objectProperty22 rdf:type owl:ObjectProperty ;
+  rdfs:label "objectProperty22" ;
+  rdfs:domain :COLLEGE ;
+  rdfs:range :Examination_cell .
+
+:objectProperty23 rdf:type owl:ObjectProperty ;
+  rdfs:label "objectProperty23" ;
+  rdfs:domain :COLLEGE ;
+  rdfs:range :Admin_Cell .
+
+# Datatype Properties
+:E1 rdf:type owl:DatatypeProperty ;
+  rdfs:label "E1" ;
+  rdfs:domain :Examination_cell ;
+  rdfs:range rdf:Datatype .
+
+:E2 rdf:type owl:DatatypeProperty ;
+  rdfs:label "E2" ;
+  rdfs:domain :Examination_cell ;
+  rdfs:range rdf:Datatype .
+
+:E3 rdf:type owl:DatatypeProperty ;
+  rdfs:label "E3" ;
+  rdfs:domain :Examination_cell ;
+  rdfs:range rdf:Datatype .
+
+:role rdf:type owl:DatatypeProperty ;
+  rdfs:label "role" ;
+  rdfs:domain :Admin_Cell ;
+  rdfs:range rdf:Datatype .
+
+:role2 rdf:type owl:DatatypeProperty ;
+  rdfs:label "role2" ;
+  rdfs:domain :d ;
+  rdfs:range rdf:Datatype .
+
+:A1 rdf:type owl:DatatypeProperty ;
+  rdfs:label "A1" ;
+  rdfs:domain :Admission_Cell ;
+  rdfs:range rdf:Datatype .
+
+:A3 rdf:type owl:DatatypeProperty ;
+  rdfs:label "A3" ;
+  rdfs:domain :Admission_Cell ;
+  rdfs:range rdf:Datatype .
+
+:A2 rdf:type owl:DatatypeProperty ;
+  rdfs:label "A2" ;
+  rdfs:domain :Admission_Cell ;
+  rdfs:range rdf:Datatype .
