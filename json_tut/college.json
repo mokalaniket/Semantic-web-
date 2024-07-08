@@ -1,0 +1,54 @@
+{
+    "college": {
+      "name": "GNE COLLEGE",
+      "address": "GILL ROAD, LUDHIANA, INDIA",
+      "founded_year": 1985,
+      "courses": [
+        {
+          "id": 1,
+          "name": "Computer Science",
+          "department": "Engineering",
+          "faculty": "Faculty of Engineering",
+          "head": "Dr. John Doe"
+        },
+        {
+          "id": 2,
+          "name": "Business Administration",
+          "department": "Management",
+          "faculty": "Faculty of Business",
+          "head": "Prof. Jane Smith"
+        },
+        {
+          "id": 3,
+          "name": "Biology",
+          "department": "Science",
+          "faculty": "Faculty of Science",
+          "head": "Dr. Michael Johnson"
+        }
+      ],
+      "students": [
+        {
+          "id": 101,
+          "name": "Alice Brown",
+          "course_id": 1,
+          "email": "alice.brown@example.com",
+          "phone": "+1 123 456 7890"
+        },
+        {
+          "id": 102,
+          "name": "Bob Green",
+          "course_id": 2,
+          "email": "bob.green@example.com",
+          "phone": "+1 234 567 8901"
+        },
+        {
+          "id": 103,
+          "name": "Charlie White",
+          "course_id": 3,
+          "email": "charlie.white@example.com",
+          "phone": "+1 345 678 9012"
+        }
+      ]
+    }
+  }
+  

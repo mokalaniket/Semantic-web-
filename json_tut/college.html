@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .container {
+      margin: auto;
+      max-width: 600px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .info {
+      margin-bottom: 10px;
+    }
+    .info label {
+      font-weight: bold;
+    }
+    .students {
+      margin-top: 20px;
+    }
+    .students table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .students th, .students td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    .students th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>College Information</h1>
+    <div class="info">
+      <label>College Name:</label>
+      <span id="collegeName">Example College</span>
+    </div>
+    <div class="info">
+      <label>Address:</label>
+      <span id="collegeAddress">123 College Street, City, Country</span>
+    </div>
+    <div class="info">
+      <label>Founded Year:</label>
+      <span id="foundedYear">1985</span>
+    </div>
+
+    <div class="students">
+      <h2>Students List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Course</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>101</td>
+            <td>Alice Brown</td>
+            <td>alice.brown@example.com</td>
+            <td>+1 123 456 7890</td>
+            <td>Computer Science</td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Bob Green</td>
+            <td>bob.green@example.com</td>
+            <td>+1 234 567 8901</td>
+            <td>Business Administration</td>
+          </tr>
+          <tr>
+            <td>103</td>
+            <td>Charlie White</td>
+            <td>charlie.white@example.com</td>
+            <td>+1 345 678 9012</td>
+            <td>Biology</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
