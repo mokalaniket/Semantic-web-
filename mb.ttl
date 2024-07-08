@@ -1,0 +1,89 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://visualdataweb.org/mobileOntology/> .
+
+# Ontology Declaration
+:MobileOntology rdf:type owl:Ontology ;
+    rdfs:label "Mobile Networks Ontology" ;
+    rdfs:comment "An ontology describing concepts related to mobile networks" .
+
+# Classes
+:MobileNetwork rdf:type owl:Class ;
+    rdfs:label "Mobile Network" ;
+    rdfs:comment "A class representing a mobile network" .
+
+:Subscriber rdf:type owl:Class ;
+    rdfs:label "Subscriber" ;
+    rdfs:comment "A class representing a subscriber of a mobile network" .
+
+:MobileDevice rdf:type owl:Class ;
+    rdfs:label "Mobile Device" ;
+    rdfs:comment "A class representing a mobile device used in a network" .
+
+:Service rdf:type owl:Class ;
+    rdfs:label "Service" ;
+    rdfs:comment "A class representing a service provided by a mobile network" .
+
+# Object Properties
+:hasSubscriber rdf:type owl:ObjectProperty ;
+    rdfs:label "has Subscriber" ;
+    rdfs:domain :MobileNetwork ;
+    rdfs:range :Subscriber .
+
+:hasDevice rdf:type owl:ObjectProperty ;
+    rdfs:label "has Device" ;
+    rdfs:domain :MobileNetwork ;
+    rdfs:range :MobileDevice .
+
+:providesService rdf:type owl:ObjectProperty ;
+    rdfs:label "provides Service" ;
+    rdfs:domain :MobileNetwork ;
+    rdfs:range :Service .
+
+# Datatype Properties
+:hasPhoneNumber rdf:type owl:DatatypeProperty ;
+    rdfs:label "has Phone Number" ;
+    rdfs:domain :Subscriber ;
+    rdfs:range xsd:string .
+
+:hasIMEI rdf:type owl:DatatypeProperty ;
+    rdfs:label "has IMEI" ;
+    rdfs:domain :MobileDevice ;
+    rdfs:range xsd:string .
+
+:hasServiceName rdf:type owl:DatatypeProperty ;
+    rdfs:label "has Service Name" ;
+    rdfs:domain :Service ;
+    rdfs:range xsd:string .
+
+# Individuals
+:JohnDoe rdf:type owl:NamedIndividual ;
+    rdf:type :Subscriber ;
+    rdfs:label "John Doe" ;
+    rdfs:comment "An individual subscriber" ;
+    :hasPhoneNumber "+123456789" .
+
+:iPhone12 rdf:type owl:NamedIndividual ;
+    rdf:type :MobileDevice ;
+    rdfs:label "iPhone 12" ;
+    rdfs:comment "An individual mobile device" ;
+    :hasIMEI "123456789012345" .
+
+:DataPlan rdf:type owl:NamedIndividual ;
+    rdf:type :Service ;
+    rdfs:label "Data Plan" ;
+    rdfs:comment "An individual service provided by the mobile network" ;
+    :hasServiceName "Data Plan" .
+
+# Subclass Relationships
+:Smartphone rdf:type owl:Class ;
+    rdfs:label "Smartphone" ;
+    rdfs:comment "A subclass of Mobile Device representing smartphones" ;
+    rdfs:subClassOf :MobileDevice .
+
+:BasicPlan rdf:type owl:Class ;
+    rdfs:label "Basic Plan" ;
+    rdfs:comment "A subclass of Service representing basic service plans" ;
+    rdfs:subClassOf :Service .
